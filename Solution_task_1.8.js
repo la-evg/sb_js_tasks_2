@@ -1,0 +1,1 @@
+console.log((phone.match(/[+\d]/g, '')).join(""));
