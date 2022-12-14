@@ -13,3 +13,10 @@ console.log(message.toLowerCase().startsWith("привет"));
 ```javascript
 console.log(greetings.toLowerCase().lastIndexOf("username"));
 ```
+
+### Задание 1.3
+В программе задана переменная firstDiv со строковым значением. Определите, встречаются ли в данной строке два парных тега p . Выведите в консоль булевое значение true, если встречается, и false — в ином случае.
+
+```javascript
+console.log((firstDiv.indexOf("<p>") !== firstDiv.lastIndexOf("<p>")) || ((firstDiv.indexOf("</p>") !== firstDiv.lastIndexOf("</p>")) ? true : false))
+```
