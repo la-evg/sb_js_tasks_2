@@ -6,3 +6,10 @@
 ```javascript
 console.log(message.toLowerCase().startsWith("привет"));
 ```
+
+### Задание 1.2
+В программе задана переменная greetings со строковым значением. Определите позицию последнего вхождения подстроки username в значении переменной greetings. Результат выведите в консоль.
+
+```javascript
+console.log(greetings.toLowerCase().lastIndexOf("username"));
+```
