@@ -97,3 +97,17 @@ for (var value in values){
   }
   console.log(values)
 ```
+
+### Задание 2.2
+В программе задана переменная partNumbers, которая хранит в себе массив. Каждый элемент массива является артикулом товара. Напишите программу, которая создаст новый массив на основе partNumbers. В новом массиве должны быть все элементы из partNumbers, которые заканчиваются на две цифры и два буквенных символа. Все остальные элементы необходимо отбросить. Значение нового массива выведите в консоль.
+
+```javascript
+const reg = /\d{2}\D{2}$/
+let newNumbers = []
+for (let numbers of partNumbers){
+  if (numbers.match(reg) !== null){
+    newNumbers.push(numbers)
+  }
+}
+console.log(newNumbers)
+```
