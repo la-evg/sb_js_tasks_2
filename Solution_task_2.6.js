@@ -1,0 +1,1 @@
+console.log(values.some(el =>  el.toString().length === 4))
