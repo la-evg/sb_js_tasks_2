@@ -144,3 +144,14 @@ for (let task of tasks){
 }
 console.log(titles)
 ```
+
+### Задание 2.5
+В программе задана переменная values, которая хранит массив со строковыми и булевыми значениями. На основе массива values сформируйте новый массив result, который является фрагментом values. Новый массив должен начинаться с первого вхождения булевого значения и заканчиваться последним вхождением булевого значения в массив values. Выведите получившийся массив в консоль.
+
+```javascript
+let firstIndex = values.findIndex(el => typeof el === "boolean");
+let lastIndex = values.findLastIndex(el => typeof el === "boolean")
+let result = values.slice(firstIndex, lastIndex + 1);
+
+console.log(result)
+```
