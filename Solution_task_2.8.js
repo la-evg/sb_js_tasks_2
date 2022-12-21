@@ -1,0 +1,1 @@
+console.log(users.findIndex(el => el.role.split(" ").length === 2))
