@@ -181,3 +181,18 @@ console.log((values.findIndex(el =>
 ```javascript
 console.log(users.findIndex(el => el.role.split(" ").length === 2))
 ```
+
+### Задание 2.9
+В программе задана переменная array, которая хранит в себе двумерный массив. Его элементы — массивы, состоящие из чисел. Отсортируйте массив по количеству элементов вложенного массива по возрастанию. Результат выведите в консоль.
+
+```javascript
+const sortByLength = (a, b) => {
+    const aArr = a.length;
+    const bArr = b.length;
+    if (aArr == bArr) return 0;
+    if (aArr < bArr) return -1;
+    if (aArr > bArr) return 1;
+  }
+  
+console.log(array.sort(sortByLength))
+```
