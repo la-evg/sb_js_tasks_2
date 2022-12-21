@@ -196,3 +196,24 @@ const sortByLength = (a, b) => {
   
 console.log(array.sort(sortByLength))
 ```
+
+### Задание 2.10
+В программе задана переменная randValues, которая хранит в себе массив. Его элементы могут являться как строковыми, так и числовыми значениями. Отсортируйте массив следующим образом:
+
+ - В начале массива должны быть все числовые значения по возрастанию
+ - В конце все строковые, упорядоченные по алфавиту
+Результат выведите в консоль.
+
+```javascript
+const sortElem = (a, b) => {
+    const aArr = a;
+    const bArr = b;
+    if (aArr == bArr) return 0;
+    if (aArr < bArr) return -1;
+    if (aArr > bArr) return 1;
+  }
+  let numbers = randValues.filter(el => Number.isInteger(el))
+  let words = randValues.filter(el => typeof el === "string")
+  randValues = [...numbers.sort(sortElem), ...words.sort(sortElem)]
+  console.log(randValues)
+```
