@@ -217,3 +217,14 @@ const sortElem = (a, b) => {
   randValues = [...numbers.sort(sortElem), ...words.sort(sortElem)]
   console.log(randValues)
 ```
+
+### Задание 2.11
+В программе задана переменная words, которая хранит в себе массив строковых значений. Напишите скрипт, который считает количество палиндромов и непалиндромов в массиве words. Результат должен представлять собой массив из двух элементов, где первое значение — количество палиндромов, а второе — непалиндромов.
+
+```javascript
+let count = [0, 0]
+for (word of words){
+  word.toLowerCase() === word.split("").reverse().join("").toLowerCase() ? count[0] += 1 : count[1] += 1;
+}
+console.log(count)
+```
