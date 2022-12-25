@@ -236,3 +236,16 @@ console.log(count)
 dates = dates.split(" ").map(date => date.replace(/\./g, "/", ))
 console.log(dates)
 ```
+
+### Задание 2.13
+В программе задана переменная tickets, которая хранит в себе строковое значение. В этой переменной указаны номера билетов на поезд (после слова Train) и на самолет (после слова Airplane). Необходимо написать скрипт, который на основе строки из переменной tickets формирует объект. Он должен хранить в себе два ключа (train, airplane), а в качестве значений — массивы с номерами билетов для поезда и самолета соответственно.
+
+```javascript
+let ticketObj = new Object;
+regType = /(\w+)(?=:)/g
+regTickets = /(\w+\d+)(?:)/g
+for (ticket of tickets.split(". ")){
+  ticketObj[ticket.toLowerCase().match(regType)] = ticket.match(regTickets) != null ? ticket.match(regTickets) : [""]
+}
+console.log(ticketObj)
+```
