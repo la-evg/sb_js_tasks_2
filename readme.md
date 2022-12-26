@@ -249,3 +249,18 @@ for (ticket of tickets.split(". ")){
 }
 console.log(ticketObj)
 ```
+
+### Задание 2.14
+В программе задана переменная numbers, которая хранит массив из чисел. Определите, какое максимальное количество элементов массива numbers (в порядке, который реализован в массиве) можно сложить, чтобы их итоговая сумма не превышала 50. Результат выведите в консоль.
+
+```javascript
+let count = 0;
+let sum = 0;
+for (number of numbers){
+  if(sum + number <= 50){
+    sum += number;
+    count += 1;
+  }
+}
+console.log(count)
+```
