@@ -264,3 +264,13 @@ for (number of numbers){
 }
 console.log(count)
 ```
+
+### Задание 2.15
+В программе задана переменная values, которая хранит массив из строк. Определите математическую сумму всех элементов, которые при преобразовании в число не вернут значение NaN. Результат выведите в консоль.
+
+```javascript
+let valuesNum = values.filter((e) => !isNaN(parseInt(e)))
+let total = valuesNum.reduce(
+  (previousValue, currentItem) => parseInt(previousValue) + parseInt(currentItem), 0)
+console.log(total)
+```
