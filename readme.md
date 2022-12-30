@@ -327,3 +327,14 @@ function count(array){
   }
   console.log(`Количество элементов в массиве: ${count(array)}`)
 ```
+
+### Задание 3.5
+В программе задан двумерный массив employee. Удалите у данного массива значение, у которого первый элемент hireDate, и добавьте новое значение ["jobName", "IT PROG"] в конец массива. Результат выведите в консоль.
+
+```javascript
+while (employee.some(el => el[0] === "hireDate")){
+    employee.splice(employee.findIndex(el => el[0] === "hireDate"), 1)
+  }
+  employee.push(["jobName", "IT PROG"])
+  console.log(employee)
+```
