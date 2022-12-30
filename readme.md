@@ -274,3 +274,20 @@ let total = valuesNum.reduce(
   (previousValue, currentItem) => parseInt(previousValue) + parseInt(currentItem), 0)
 console.log(total)
 ```
+
+### Задание 2.16
+В программе заданы два массива array_1 и array_2, элементы которого являются числами. Значения внутри одного массива уникальные. Реализуйте функцию intersection, которая принимает в качестве аргументов два массива и возвращает новый массив. Он должен содержать значения, которые встречаются в обоих массивах-аргументах, и быть отсортирован по убыванию.
+
+```javascript
+const sortByUp = (a, b) => {
+    const aArr = a.length;
+    const bArr = b.length;
+    if (aArr == bArr) return 0;
+    if (aArr < bArr) return 1;
+    if (aArr > bArr) return -1;
+  }
+function intersection(array1, array2) {
+  return array1.filter(num => array2.includes(num))
+}
+console.log(intersection(array_1, array_2).sort(sortByUp))
+```
