@@ -299,3 +299,13 @@ console.log(intersection(array_1, array_2).sort(sortByUp))
 delete car.engine;
 console.log(car)
 ```
+
+### Задание 3.2
+В программе объявлена переменная goods, которая хранит объект со свойствами, описывающими товар. Сформируйте массив, который содержит в начале все названия свойств объекта, а потом все их значения. Результат выведите в консоль.
+
+```javascript
+let goodsKey = Object.keys(goods);
+let goodsValue = Object.values(goods);
+let goodsArr = goodsKey.concat(goodsValue)
+console.log(goodsArr)
+```
