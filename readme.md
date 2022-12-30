@@ -317,3 +317,13 @@ console.log(goodsArr)
 let book = Object.assign(article, author)
 console.log(book)
 ```
+
+### Задание 3.4
+В программе задан массив array. Напишите функцию count(), которая считает количество элементов массива array и выводит в консоль сообщение, как в примере.
+
+```javascript
+function count(array){
+    return array.length
+  }
+  console.log(`Количество элементов в массиве: ${count(array)}`)
+```
