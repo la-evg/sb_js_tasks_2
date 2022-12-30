@@ -309,3 +309,11 @@ let goodsValue = Object.values(goods);
 let goodsArr = goodsKey.concat(goodsValue)
 console.log(goodsArr)
 ```
+
+### Задание 3.3
+В программе заданы две переменные article и author, которые содержат объекты. Объект article содержит информацию о статье, а author — об авторе. Сформируйте новый объект, который содержит свойства объектов article и author. Результат выведите в консоль.
+
+```javascript
+let book = Object.assign(article, author)
+console.log(book)
+```
