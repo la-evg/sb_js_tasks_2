@@ -291,3 +291,11 @@ function intersection(array1, array2) {
 }
 console.log(intersection(array_1, array_2).sort(sortByUp))
 ```
+
+### Задание 3.1
+В программе объявлена переменная car, которая хранит в себе объект, у которого есть как минимум одно свойство — engine. Удалите из объекта car свойство engine и результат выведите в консоль.
+
+```javascript
+delete car.engine;
+console.log(car)
+```
