@@ -338,3 +338,19 @@ while (employee.some(el => el[0] === "hireDate")){
   employee.push(["jobName", "IT PROG"])
   console.log(employee)
 ```
+
+### Задание 3.6
+В программе задан двумерный массив array. Создайте и вызовите функцию countString(), которая считает количество значений массива array, у которых второй элемент является строкой. Функция countString() должна выводить в консоль сообщение, как в примере.
+
+```javascript
+function countString(arr) {
+    let count = 0;
+    for (let values of arr) {
+        if (typeof values[1] === "string") {
+            count++
+        }
+    }
+    console.log(`Количество строковых элементов в именованном массиве: ${count}`)
+};
+countString(array)
+```
