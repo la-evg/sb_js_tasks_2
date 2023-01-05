@@ -354,3 +354,14 @@ function countString(arr) {
 };
 countString(array)
 ```
+
+### Задание 4.1
+В программе объявлены объекты pet_1 и pet_2. Напишите функцию getName() и присвойте ее объектам pet_1 и pet_2 в качестве метода. При вызове метода getName() он должен вернуть имя и возраст питомца через пробел. Решить задачу необходимо с использованием this.
+
+```javascript
+function getName() {
+    return `${this.name} ${this.age}`
+}
+pet_1.getName = getName;
+pet_2.getName = getName;
+```
