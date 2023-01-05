@@ -365,3 +365,11 @@ function getName() {
 pet_1.getName = getName;
 pet_2.getName = getName;
 ```
+
+### Задание 4.2
+В программе объявлен объект input и функция sayHi(), которая выводит в консоль сообщение из примера. Используя метод присвоения контекста, свяжите контекст объекта input с функцией sayHi() и вызовите функцию sayHi().
+
+```javascript
+input.sayHi = sayHi;
+input.sayHi()
+```
