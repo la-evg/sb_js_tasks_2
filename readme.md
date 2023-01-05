@@ -380,3 +380,19 @@ input.sayHi()
 ```javascript
 getDescription = getDescription.bind(pet)
 ```
+
+### Задание 4.4
+В программе объявлен объект props, у которого задан набор свойств. Объявите функцию getValue(), которая выводит в консоль строку со всеми свойствами и их значениями (без методов). Привяжите объект props в качестве контекста функции getValue() и присвойте получившуюся функцию переменной getValue
+
+```javascript
+function getValue(){
+    let strProps = []
+    for (const [key, value] of Object.entries(this)) {
+      if (typeof value != "function"){
+        strProps.push(`${key}: ${value}`)
+      }
+  }
+      console.log(`Значения свойств объекта props (${strProps.join(', ')})`);
+  }
+  getValue = getValue.bind(props)
+```
