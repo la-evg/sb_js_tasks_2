@@ -396,3 +396,14 @@ function getValue(){
   }
   getValue = getValue.bind(props)
 ```
+
+### Задание 4.5
+В программе объявлен объект hero, свойства которого описывают информацию о герое. В объекте в том числе определен метод getPosition, который возвращает позицию героя в игре. Определите, почему вызов getPosition работает некорректно. Исправьте эту ошибку.
+
+```javascript
+hero = { 
+    nick: "FirstHero", 
+    position: "Лагерь",
+    getPosition() {console.log("Позиция героя: " + this.position)}
+}
+```
