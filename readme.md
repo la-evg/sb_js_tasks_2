@@ -373,3 +373,10 @@ pet_2.getName = getName;
 input.sayHi = sayHi;
 input.sayHi()
 ```
+
+### Задание 4.3
+В программе объявлен объект pet со свойствами name и breed и функция getDescription(), которая выводит эту информацию, используя this. Привяжите к функции getDescription() контекст pet и присвойте получившуюся функцию переменной getDescription.
+
+```javascript
+getDescription = getDescription.bind(pet)
+```
