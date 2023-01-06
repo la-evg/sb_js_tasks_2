@@ -407,3 +407,11 @@ hero = {
     getPosition() {console.log("Позиция героя: " + this.position)}
 }
 ```
+
+### Задание 5.1
+В программе объявлена переменная order, которая хранит объект. Объявите переменную descriptor, которая должна содержать значения всех атрибутов ключа totalPrice объекта orders в виде объекта. Результат выведите в консоль.
+
+```javascript
+let descriptor = Object.getOwnPropertyDescriptor(order, 'totalPrice')
+console.log(descriptor)
+```
