@@ -428,3 +428,20 @@ for (const [key, value] of Object.entries(employees)){
 }
 console.log(empValues.join(", "))
 ```
+
+### Задание 5.3
+В программе объявлены переменные firstName и lastName. Создайте объект user со свойствами firstName и lastName и добавьте getter и setter fullName. Сеттер fullName должен принимать имя и фамилию пользователя через пробел, разделять и присваивать свойствам firstName и lastName соответственно. Геттер fullName должен формировать строку, состоящую из имени и фамилии через пробел.
+
+```javascript
+const user = {
+  firstName : firstName,
+  lastName : lastName,
+  set fullName(value) {
+    return this.firstName = value.split(" ")[0], 
+      this.lastName = value.split(" ")[1]
+  },
+  get fullName() {
+    return `${this.firstName} ${this.lastName}`
+  }
+}
+```
