@@ -415,3 +415,16 @@ hero = {
 let descriptor = Object.getOwnPropertyDescriptor(order, 'totalPrice')
 console.log(descriptor)
 ```
+
+### Задание 5.2
+В программе задан объект employees, который содержит ряд свойств и методов. Сформируйте строку с именами всех свойств через запятую и пробел (, ) и выведите в консоль. Имена методов добавляться не должны.
+
+```javascript
+let empValues = []
+for (const [key, value] of Object.entries(employees)){
+  if (typeof value != "function"){
+    empValues.push(key)
+  }
+}
+console.log(empValues.join(", "))
+```
