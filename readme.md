@@ -459,3 +459,15 @@ class Delivery{
 }
 let deliveryName = new Delivery(name, phone);
 ```
+
+### Задание 5.5
+В программе создан класс Permissions, свойства которого описывают права пользователей на редактирование статей на сайте. Создайте новый класс User, который наследуется от класса Permissions. Дополнительно в классе User добавьте свойство name, значение которого класс принимает в качестве аргумента конструктора.
+
+```javascript
+class User extends Permissions{
+    constructor(name){
+      super();
+      this.name = name;
+    }
+  }
+```
