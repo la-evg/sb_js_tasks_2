@@ -486,3 +486,10 @@ function queue(n, arr) {
 }
 console.log(queue(num, array))
 ```
+
+### Задание 6.1
+В программе задана переменная ctx, которая содержит контекст canvas элемента. Отрисуйте в canvas прямоугольник fillRect с размерами 100 на 65.
+
+```javascript
+ctx.fillRect(5, 5, 100, 65);
+```
