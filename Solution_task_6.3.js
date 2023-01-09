@@ -1,0 +1,15 @@
+ctx.beginPath();
+ctx.strokeStyle = "#e74c3c";
+ctx.moveTo(50, 50);
+ctx.lineTo(50, 100);
+ctx.stroke();
+ctx.beginPath();
+ctx.strokeStyle = "#16a085";
+ctx.moveTo(100, 50);
+ctx.lineTo(100, 100);
+ctx.stroke();
+ctx.beginPath();
+ctx.strokeStyle = "#2980b9";
+ctx.moveTo(150, 50);
+ctx.lineTo(150, 100);
+ctx.stroke();

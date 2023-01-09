@@ -509,3 +509,24 @@ ctx.moveTo(100, 150);
 ctx.lineTo(200, 150);
 ctx.stroke();
 ```
+
+### Задание 6.3
+В программе задана переменная ctx, которая содержит контекст canvas элемента. Отрисуйте в canvas три отрезка разных цветов. Первый отрезок красного #e74c3c цвета, второй — зеленого #16a085 цвета, а третий — синего #2980b9 цвета.
+
+```javascript
+ctx.beginPath();
+ctx.strokeStyle = "#e74c3c";
+ctx.moveTo(50, 50);
+ctx.lineTo(50, 100);
+ctx.stroke();
+ctx.beginPath();
+ctx.strokeStyle = "#16a085";
+ctx.moveTo(100, 50);
+ctx.lineTo(100, 100);
+ctx.stroke();
+ctx.beginPath();
+ctx.strokeStyle = "#2980b9";
+ctx.moveTo(150, 50);
+ctx.lineTo(150, 100);
+ctx.stroke();
+```
