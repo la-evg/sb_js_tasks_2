@@ -530,3 +530,27 @@ ctx.moveTo(150, 50);
 ctx.lineTo(150, 100);
 ctx.stroke();
 ```
+
+### Задание 6.4
+В программе задана переменная ctx, которая содержит контекст canvas элемента. Отрисуйте в canvas четыре квадрата fillRect разных цветов с указанными на картинке размерами и отступами.
+
+Значение цветов:
+
+- Левый верхний квадрат: #ff3d00
+- Правый верхний квадрат: #0bdd38
+- Левый нижний квадрат: #2e77da
+- Правый нижний квадрат: #ffd200
+
+![pic for 6.4 task](img/image_6.4.png)
+
+```javascript
+ctx.beginPath();
+ctx.fillStyle = '#ff3d00';
+ctx.fillRect(10, 10, 100, 100);
+ctx.fillStyle = '#0bdd38';
+ctx.fillRect(120, 10, 100, 100);
+ctx.fillStyle = '#2e77da';
+ctx.fillRect(10, 120, 100, 100);
+ctx.fillStyle = '#ffd200';
+ctx.fillRect(120, 120, 100, 100);
+```
